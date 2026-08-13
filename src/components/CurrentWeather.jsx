@@ -17,9 +17,6 @@ function CurrentWeather({
           {weather.name}
         </h1>
 
-        <p>
-          Chance of rain: 0%
-        </p>
 
         <div className="temperature">
           {convertTemp(weather.main.temp)}°{unit}
