@@ -4,6 +4,10 @@ Weatherly is a modern and responsive weather dashboard built with React and the 
 
 It provides current weather information, hourly forecasts, a 5-day forecast, air conditions, location-based weather, and Celsius/Fahrenheit conversion through a clean dark-themed interface.
 
+## 📸 Screenshot
+
+![Weatherly Dashboard](screenshots/weatherly-dashboard.png)
+
 ## 🚀 Features
 
 - 🔍 Search weather by city
