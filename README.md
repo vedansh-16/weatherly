@@ -6,7 +6,7 @@ It provides current weather information, hourly forecasts, a 5-day forecast, air
 
 ## 📸 Screenshot
 
-![Weatherly Dashboard](screenshots/weatherly-dashboard.png)
+![Weatherly Dashboard](public/weatherly-dashboard.png)
 
 ## 🚀 Features
 
