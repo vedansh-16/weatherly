@@ -636,68 +636,71 @@ footer {
 }
 
 
-/* ================= RESPONSIVE ================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 900px) {
 
   .app {
+    width: 100%;
+    min-height: 100vh;
     height: auto;
 
-    min-height: 100vh;
+    padding: 16px;
   }
 
   .top-bar {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 
-    gap: 10px;
+    align-items: stretch;
+
+    gap: 12px;
   }
 
   .brand {
-    justify-self: center;
+    align-self: center;
+
+    font-size: 24px;
   }
 
   .search-wrapper {
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
   }
 
   .location-button {
-    justify-self: center;
-  }
-
-  .weather-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .main-content {
-    grid-template-rows: auto auto auto;
-  }
-
-  .daily-section {
-    min-height: 500px;
-  }
-}
-
-
-@media (max-width: 650px) {
-
-  .app {
-    padding: 12px;
-  }
-
-  .search-bar {
-    flex-direction: column;
-  }
-
-  .search-bar button {
     width: 100%;
   }
 
+  .unit-toggle {
+    margin-top: 2px;
+    margin-bottom: 14px;
+  }
+
+  .weather-layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
   .current-weather {
-    padding: 25px;
+    min-height: 300px;
+
+    padding: 24px;
 
     flex-direction: column;
 
     align-items: flex-start;
+
+    justify-content: space-between;
 
     gap: 15px;
   }
@@ -707,7 +710,9 @@ footer {
   }
 
   .temperature {
-    font-size: 55px;
+    font-size: 56px;
+
+    margin-top: 20px;
   }
 
   .weather-icon {
@@ -716,24 +721,170 @@ footer {
 
   .weather-icon img {
     width: 100px;
-
     height: 100px;
   }
 
-  .hourly-forecast {
-    overflow-x: auto;
-
-    grid-template-columns: repeat(6, 110px);
+  .hourly-section {
+    overflow: hidden;
   }
 
-   .air-grid {
-    grid-template-columns: 1fr;
-    row-gap: 16px;
+  .hourly-forecast {
+    display: flex;
+
+    overflow-x: auto;
+
+    height: auto;
+
+    padding-bottom: 8px;
+
+    scrollbar-width: thin;
+  }
+
+  .hour {
+    min-width: 95px;
+
+    padding: 8px 12px;
+
+    border-right: 1px solid #202c3d;
+  }
+
+  .air-section {
+    min-height: 230px;
+  }
+
+  .air-grid {
+    height: auto;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 20px;
+
+    row-gap: 24px;
+  }
+
+  .condition-icon {
+    width: 32px;
+    height: 32px;
+
+    font-size: 20px;
+  }
+
+  .condition {
+    gap: 9px;
+  }
+
+  .condition-info strong {
+    font-size: 18px;
+  }
+
+  .daily-section {
+    min-height: 500px;
+
+    padding: 20px;
   }
 
   .daily-item {
     grid-template-columns: 55px 50px 1fr auto;
 
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .daily-item p {
+    font-size: 12px;
+  }
+
+  footer {
+    margin-top: 14px;
+    padding-bottom: 4px;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 500px) {
+
+  .app {
+    padding: 12px;
+  }
+
+  .brand {
+    font-size: 22px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .location-button {
+    width: 100%;
+  }
+
+  .current-weather {
+    min-height: 290px;
+
+    padding: 22px;
+  }
+
+  .current-info h1 {
+    font-size: 27px;
+  }
+
+  .temperature {
+    font-size: 50px;
+  }
+
+  .weather-icon img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .hour {
+    min-width: 90px;
+  }
+
+  .air-grid {
+    column-gap: 10px;
+  }
+
+  .condition-info p {
+    font-size: 11px;
+  }
+
+  .condition-info strong {
+    font-size: 17px;
+  }
+
+  .daily-item {
+    grid-template-columns: 45px 45px 1fr auto;
+
+    gap: 6px;
+  }
+
+  .daily-item img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .daily-item strong {
+    font-size: 12px;
+  }
+
+  .daily-item p {
+    font-size: 11px;
   }
 }
