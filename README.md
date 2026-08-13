@@ -41,6 +41,10 @@ It provides current weather information, hourly forecasts, a 5-day forecast, air
 - Git
 - GitHub
 
+## 🌐 Live Demo
+
+🚀 **Live Demo:** [View Weatherly](https://weatherly-pink-xi.vercel.app/)
+
 ## 📂 Project Structure
 
 ```text
